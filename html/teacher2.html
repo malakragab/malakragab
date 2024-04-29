@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="E:\it project\css\malak ragab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header class="hadeermrg">
+        <a href="profile" class="legomrg">profile</a>
+        <nav class="nadarmrg">
+            <a href="#home">home</a>
+            <a href="#center">center</a>
+            <a href="#book">book</a>
+            <a href="#contact">contact</a>
+            <span class="iconsssmrg"><i class="fa fa-moon-o" aria-hidden="true"></i></span>
+        </nav>
+    </header>
+    <section class="homemrg" >
+        <div class="imagemrg">
+            <img src="e:\it project\img\photo of alaa alaraqi.jpg">
+        </div>
+        <div class="cententmrg">
+            <h3 class="mrg">mr alaa alarqi</h3>
+            <p class="mrg">a history teacher who graduated from faculty of arts ,history department,and now works as teacher at several centers</p>
+            <a href="#" class="bnm">welcome to this page</a>
+        </div>
+    </section>
+
+
+</section>
+<section class="bookmrg" >
+    <h1 class="headingmrg">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="spacemrg"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+    <div class="rrwmrg">
+        <form action="">
+            <div class="input-boxmrg">
+                <h3 class="mrg">your name</h3>
+                <input type="text" placeholder="your name" required class="bixmrg">
+            </div>
+            <div class="input-boxmrg">
+                <h3 class="mrg">your date</h3>
+                <input type="date" class="bixmrg">
+            </div>
+            <div class="input-boxmrg">
+                <h3 class="mrg">your number</h3>
+                <input type="number" placeholder="your number" required class="bixmrg">
+            </div>
+            <div class="input-boxmrg">
+                <h3 class="mrg">your email</h3>
+                <input type="email"  placeholder ="your email"  required="bixmrg">
+            </div>
+            <input type="submit" class="btimrg">
+        </form>
+
+            
+         
+        </form>
+    </div>
+
+</section>
+<h1 class="headingmrg">video about educational platform</h1>
+<div class="hatemmrg">
+    <p class="mrg">this video explained the educational platform </p>
+</div>
+<div class="btkmrg">
+    <div class="playmrg"></div>
+    <p class="mrg">play video</p>
+</div>
+<div class="clipmrg">
+    <iframe width="370" height="238" src="https://www.youtube.com/embed/i6mhy1uAWMk" title="خطة العمل | التاريخ | الثانوية العامة 2022 | علاء العراقى" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <b class="closemrg">close</b>
+</div>
+
+<section class="centermrg">
+    <h1 class="headingmrg">our center</h1>
+    <div class="box-containermrg">
+        <div class="boxmrg">
+            <img src="e:\it project\img\aclasscenter.jpg">
+            <h3 class="mrg">center aclass</h3>
+        </div>
+        <div class="boxmrg">
+            <img src="e:\it project\img\vipcenter.jpg">
+            <h3  class="mrg">center vip</h3>
+        </div>
+        <div class="boxmrg">
+            <img src="e:\it project\img\acapital center.jpg">
+            <h3 class="mrg">center capital</h3>
+        </div>
+    </div>
+    </div>
+
+    <table border="1" class="suimrg">
+        <tr>
+            <th>center</th>
+            <th>price</th>
+            <th>time</th>
+        </tr>
+        <tr>
+            <td>vip</td>
+            <td>70</td>
+            <td>9:00am</td>
+        </tr>
+        <tr>
+            <td>aclass</td>
+            <td>70</td>
+            <td>12:00am</td>
+        </tr>
+        <tr>
+            <td>capital</td>
+            <td>70</td>
+            <td>4:00pm</td>
+        </tr>
+    </table>
+</section>
+<script>
+     let btkmrg = document .querySelector('.btkmrg');
+     let clipmrg = document.querySelector('.clipmrg');
+     let closemrg = document.querySelector('.closemrg');
+     btkmrg .onclick = function(){
+        btkmrg .classList .add('active')
+        clipmrg .classList .add('active')
+    }
+    closemrg.onclick = function(){
+        btkmrg .classList.remove('active');
+        clipmrg .classList .remove('active');
+
+    }
+</script>
+
+<script>
+    let iconsssmrg =document.querySelector('.iconsssmrg');
+    iconsssmrg.onclick= function(){
+        document.body.classList.toggle("dark-theme");
+        
+
+
+    }
+</script>
+
+<section class="footermrg" >
+    <div class="box-contaimrg">
+        <div class="brxmrg">
+            <h3 class="mrg">links</h3>
+            <a href="#">home</a>
+            <a href="#">center</a>
+            <a href="#">book</a>
+        </div>
+        <div class="brxmrg">
+            <h3 class="mrg">numbers</h3>
+            <a href="#">0102021777758</a>
+            <a href="#">01115889595</a>
+            <a href="#">01030009960</a>
+        </div>
+    </div>
+</section>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>

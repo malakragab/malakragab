@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="E:\it project\css\malak ragab.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+        <nav class="hagarmkr">
+            <div class="nadamkr">teacher page</div>
+            <ul class="malakmkr">
+                <li class="gannamkr"><a href="#introduction">introduction</a></li>
+                <li class="gannamkr" ><a href="#aboutmkr">aboutmkr</a></li>
+                <li class="gannamkr"> <a href="#apply">apply</a></li>
+            </ul>
+              
+            <span class="iconsssmkr"><i class="fa fa-moon-o" aria-hidden="true"></i></span>
+        </nav>
+        <div class="searchmkr">
+            <div class="rewmkr">
+                <input  class="input-mkr" type="text" placeholder="search...">
+                <button  class="shahdmkr"  type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="resultbox-mkr">
+            </div>
+
+        </div>
+    <section class="introductionmkr"  id="introductionmkr">
+        <div class="comtentmkr">
+            <img src="e:\it project\img\photo of mohamed sami.jpg">
+            <h3 class="mkr">mr mohamed sami</h3>
+            <p class="mkr">a geography teacher who graduated from the college of education and has youtube channel</p>
+            <a href="#" class="bmamkr">see more</a>
+        </div>
+    </section>
+
+    <section class="photomkr">
+        <h1 class="headingmkr">photo about geography</h1>
+        <div class="phtmkr">
+            <img  class="mkr"  src="e:\it project\img\photo about geography (2).jpg">
+            <img src="e:\it project\img\photo about geography.jpg">
+        </div>
+    </section>
+    <section class="aboutmkr"  id="aboutmkr">
+        <h1 class="hodamkr"><span>about </span>us</h1>
+        <div class="rowmkr">
+            <div class="video-containermkr">
+                <video src="e:\it project\video\برومو سينما أنواع الحدود السياسية - المبدع محمد سامي - الصف الثالث الثانوي - الجغرافيا السياسية.mp4" loop muted autoplay></video>
+                <h3 class="mkr">best teacher in geography</h3>
+            </div>
+            <div class="comtentmkr">
+                <h3 class="mkr">why you choose?</h3>
+                <p class="mkr">this video introduction about program of mr mohamed sami</p>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="applymkr">
+        <h1 class="hodamkr"><span>apply</span></h1>
+        <div class="rowmkr">
+            <form action="#">
+                <input type="text" placeholder="name" required class="bzxmkr">
+                <input type="email" placeholder="email"   required class="bzxmkr">
+                <input type="number" placeholder="number" required class="bzxmkr">
+                <input type="submit" value="send" required  class="bmamkr">
+            </form>
+        </div>
+
+    </section>
+    <section class="surmkr">
+        <h1 class="headingmkr">our center</h1>
+        <div class="box-contamkr">
+            <div class="bcxmkr">
+                <img src="e:\it project\img\aclasscenter.jpg " class="mkr">
+                <h3 class="mkr">center aclass</h3>
+                <p class="mkr">time is 8:00am</p>
+                <p class="mkr">13/10/2025</p>
+            </div>
+            <div class="bcxmkr">
+                <img src="e:\it project\img\vipcenter.jpg">
+                <h3 class="mkr">center vip</h3>
+                <p class="mkr" >time is 3:00pm</p>
+                <p class="mkr">13/10/2025</p>
+            </div>
+            <div class="bcxmkr">
+                <img src="e:\it project\img\acapital center.jpg">
+                <h3 class="mkr" >center capital</h3>
+                <p class="mkr" >time is 6:00pm</p>
+                <p class="mkr" >13/10/2025</p>
+            </div>
+        </div>
+        </div>
+        
+        <table border="1" class="cermkr">
+            <tr>
+                <th>center</th>
+                <th>price</th>
+                <th>time</th>
+            </tr>
+            <tr>
+                <td>vip</td>
+                <td>70</td>
+                <td>7:00am</td>
+            </tr>
+            <tr>
+                <td>aclass</td>
+                <td>70</td>
+                <td>10:00am</td>
+            </tr>
+            <tr>
+                <td>capital</td>
+                <td>70</td>
+                <td>2:00pm</td>
+            </tr>
+        </table>
+    </section>
+     <script>
+        var iconsss =document.querySelector('.iconsss');
+        iconsss.onclick= function(){
+            document.body.classList.toggle("dark-theme");
+
+
+        }
+    </script>
+
+    <script>
+        let availablekeymkr =[
+            "about",
+            "apply",
+            "introduction",
+        ];
+
+        let resultBox =document.querySelector('.resultbox-mkr');
+        let inputBOx =document.querySelector('.input-mkr');
+
+        inputBOx .onkeyup =function(){
+            let result=[];
+            let input=inputBOx.value;
+            if(input.length){
+                result=availablekeymkr .filter((keyword) =>{
+                    return keyword.toLowerCase().includes(input.toLowerCase());
+                });
+            }
+            display(result);
+        }
+
+        function display(result){
+            let conteot=result.map((list) =>{
+                return "<li class='remkr'> " +list +"</li>"
+            });
+
+            resultBox.innerHTML ="<ul class='resultmkr'>" +conteot +"</ul>"
+            
+
+
+        }
+
+
+    </script>
+     <script>
+        var iconsssmkr =document.querySelector('.iconsssmkr');
+        iconsssmkr.onclick= function(){
+            document.body.classList.toggle("dark-theme");
+        }
+    </script>
+    
+    
+    
+        <script src="main.js"></script>
+  
+
+</body>
+</html>
